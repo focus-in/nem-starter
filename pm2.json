@@ -1,0 +1,20 @@
+{
+  "name": "NEM Starter",
+  "script": "./index.js",
+  "instances": 0,
+  "exec_mode": "cluster",
+  "max_restarts": 20,
+  "max_memory_restart": "200M",
+  "env": {
+    "PORT": 3000,
+    "NODE_ENV": "development"
+  },
+  "env_production" : {
+    "PORT": 8432,
+    "NODE_ENV": "production"
+  },
+  "merge_logs": true,
+  "error_file": "./storage/logs/error.log",
+  "out_file": "./storage/logs/out.log",
+  "log_date_format": "DD-MM-YYYY HH:mm:ss Z"
+}
